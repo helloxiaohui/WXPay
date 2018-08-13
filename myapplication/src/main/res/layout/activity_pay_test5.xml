@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleText"
+                android:text="应用ID" />
+
+            <EditText
+                android:id="@+id/btnAPPID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="appId" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleText"
+                android:text="商户号" />
+
+            <EditText
+                android:id="@+id/btnPartnerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="partnerId" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleText"
+                android:text="预支付交易会话ID" />
+
+            <EditText
+                android:id="@+id/btnPrepayId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="prepayId" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleText"
+                android:text="随机字符串" />
+
+            <EditText
+                android:id="@+id/btnNonceStr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="nonceStr" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleText"
+                android:text="时间戳" />
+
+            <EditText
+                android:id="@+id/btnTimeStamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="timeStamp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleText"
+                android:text="扩展字段" />
+
+            <EditText
+                android:id="@+id/btnPackageValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Sign=WXPay"
+                android:hint="packageValue" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleText"
+                android:text="sign" />
+
+            <EditText
+                android:id="@+id/btnSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="sign" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCreatePayTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="生成预支付时间戳" />
+        <Button
+            android:id="@+id/btnCreatePayRandom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="生成随机字符串" />
+        <Button
+            android:id="@+id/btnCreatePayID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="生成预支付ID" />
+        <Button
+            android:id="@+id/btnCreatePaySign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="生成支付签名" />
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发起支付" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="支付结果：" />
+    </LinearLayout>
+
+</ScrollView>
