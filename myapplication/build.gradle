@@ -23,16 +23,16 @@ android {
     signingConfigs {
         //调试版本的签名配置
         debug {
-            keyAlias '壹品仓'
-            keyPassword '88888888'
-            storeFile file('C:/DevelopmentTools/Android/keystore/3dbuy.jks')
-            storePassword '88888888'
+            keyAlias '11111111'
+            keyPassword '11111111'
+            storeFile file('C:/DevelopmentTools/Android/keystore/11111111.jks')
+            storePassword '11111111'
         }
         releaseConfig {
-            keyAlias '壹品仓'
-            keyPassword '88888888'
-            storeFile file('C:/DevelopmentTools/Android/keystore/3dbuy.jks')
-            storePassword '88888888'
+            keyAlias '11111111'
+            keyPassword '11111111'
+            storeFile file('C:/DevelopmentTools/Android/keystore/11111111.jks')
+            storePassword '11111111'
         }
     }
 
